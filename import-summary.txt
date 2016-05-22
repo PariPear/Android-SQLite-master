@@ -1,0 +1,67 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+E:\New folder\Android-SQLite-master1
+      -                             
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ant.properties
+* build.xml
+* out\
+* out\production\
+* out\production\Android-SQLite\
+* out\production\Android-SQLite\Android-SQLite.apk
+* out\production\Android-SQLite\Android-SQLite.unaligned.apk
+* out\production\Android-SQLite\com\
+* out\production\Android-SQLite\com\expr\
+* out\production\Android-SQLite\com\expr\sample\
+* out\production\Android-SQLite\com\expr\sample\db\
+* out\production\Android-SQLite\com\expr\sample\db\BuildConfig.class
+* out\production\Android-SQLite\com\expr\sample\db\DatabaseHelper.class
+* out\production\Android-SQLite\com\expr\sample\db\ImageHelper.class
+* out\production\Android-SQLite\com\expr\sample\db\MainActivity$1.class
+* out\production\Android-SQLite\com\expr\sample\db\MainActivity$LoadImageFromDatabaseTask.class
+* out\production\Android-SQLite\com\expr\sample\db\MainActivity.class
+* out\production\Android-SQLite\com\expr\sample\db\R$attr.class
+* out\production\Android-SQLite\com\expr\sample\db\R$drawable.class
+* out\production\Android-SQLite\com\expr\sample\db\R$id.class
+* out\production\Android-SQLite\com\expr\sample\db\R$layout.class
+* out\production\Android-SQLite\com\expr\sample\db\R$string.class
+* out\production\Android-SQLite\com\expr\sample\db\R.class
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
